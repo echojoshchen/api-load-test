@@ -7,9 +7,8 @@ import middie from "middie";
 export async function configureRouter(app: FastifyInstance): Promise<void> {
     await app.register(middie);
 
-    // Set security headers
     app.get("/", async () => {
-        return "hello world";
+        return Math.random().toString();
     });
 }
 

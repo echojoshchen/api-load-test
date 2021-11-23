@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/app.js"
   },
   "author": "",
   "license": "ISC",
